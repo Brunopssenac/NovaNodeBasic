@@ -28,13 +28,13 @@ div#res {
 
 <script>
     function somar() {
-        var tn1 = window.document.getElementsById("h1")
+        var tn1 = window.document.getElementById("n1")
         var tn2 = window.document.querySelector("input#n2")
-        var res = window.document.getElementsById("res")
+        var res = window.document.getElementById("res")
         
         var valor1 = Number(tn1.value)
         var valor2 = Number(tn2.value)
-        var s = valor + valor2
+        var s = valor1 + valor2
 res.innerHTML =  `A  soma entre ${valor1} e ${valor2} igual a ${s}`
     }
     </script>
