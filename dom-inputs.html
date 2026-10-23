@@ -9,7 +9,7 @@
     <h1>somando valores</h1>
     <input type="number" name="n1" id="n1">
     <input type="number" name="n2" id="n2">
-    <input type="button" value="somar">
+    <input type="button" value="somar" onclick="somar()">
     <div id="res">Resultado</div>
 
     <style>
@@ -24,7 +24,20 @@ div#res {
     margin-top: 20px;
 }
 
-    </style>
+</style>
+
+<script>
+    function somar() {
+        var tn1 = window.document.getElementsById("h1")
+        var tn2 = window.document.querySelector("input#n2")
+        var res = window.document.getElementsById("res")
+        
+        var valor1 = Number(tn1.value)
+        var valor2 = Number(tn2.value)
+        var s = valor + valor2
+res.innerHTML =  `A  soma entre ${valor1} e ${valor2} igual a ${s}`
+    }
+    </script>
 
 </body>
 </html>
